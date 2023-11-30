@@ -580,7 +580,7 @@ fill: #F4F4FD;
  
 .form-subscribe{
 display: flex;
-gap: 16px;
+gap: 24px;
 }
 
 .form-subscribe-wrapper{
@@ -595,6 +595,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.5em;
 letter-spacing: 0.02em;
+margin-bottom: 16px;
 color: var(--WHITE, #FFF);
 }
 
@@ -606,27 +607,27 @@ font-family: Roboto;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 2em;
-letter-spacing: 0.48px;
+line-height: 1.5em;
+letter-spacing: 0.04em;
 padding: 8px 212px 8px 16px;
 margin-top: 16px;
 color: var(--WHITE, #FFF);
 border-radius: 4px;
 border: 1px solid var(--WHITE, #FFF);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+filter: drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.15));
 background: none;
 }
 
 .subscribe-btn{
 display: inline-flex;
 padding: 8px 24px;
-width: 165px;
+min-width: 165px;
 height: 40px;
 justify-content: center;
 align-items: center;
 gap: 16px;
 text-align: center;
-font-family: Roboto;
+font-family: "Roboto", sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -634,11 +635,13 @@ line-height: 1.5em;
 letter-spacing: 0.04em;
 color: var(--WHITE, #FFF);
 border-radius: 4px;
+border: none;
 background: var(--IRIS, #4D5AE5);
 }
 
 .subscribe-btn-icon{
 fill: #FFFFFF;
+margin-left: 16px;
 }
 /* BACKDROP */
 
@@ -735,7 +738,7 @@ margin-bottom: 4px;
 color: var(--LIGHT-SLATE, #8E8F99);
 }
 
-.review-form-field-wrapper{
+.review-form-input-wrapper{
 margin-bottom: 8px;
 }
 
@@ -845,9 +848,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .review-form-checkbox:checked
 +.review-form-checkbox-label
 .privacy-policy-link{
-background-color: #4D5AE5;
+background-color: #404bbf;
 border: none;
-fill: #ffffff;
+fill: #F4F4FD;
 }
 
 .accent-color{
@@ -862,8 +865,6 @@ color: #4D5AE5;
 
 .review-form-btn {
 display: block;
-align-items: flex-start;
-gap: 10px;
 min-width: 169px;
 height: 56px;
 padding: 16px 32px;
@@ -880,4 +881,5 @@ color: var(--WHITE, #FFFFFF);
 background: var(--IRIS, #4D5AE5);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+margin: auto;
 }
